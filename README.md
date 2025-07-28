@@ -1,5 +1,5 @@
 # Supplementary Materials: An Illustrative Example
-This repository includes a GeNIe [^1] project file used for the illustrative example presented in our manuscript, "*Observation or Intervention: Inference with Bayesian Belief Networks in Tourism Research*".
+This repository includes the GeNIe [^1] project file used for the illustrative example presented in our manuscript, "*Observation or Intervention: Inference with Bayesian Belief Networks in Tourism Research*".
 
 ## How to Use
 **1. Install GeNIe**
