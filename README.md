@@ -13,3 +13,4 @@ This repository includes the GeNIe project file used for the illustrative exampl
   - Click the **Update** (_⚡_) icon on the toolbar to compile the network and display each variable's probability distribution.
 
 For other inference tasks (e.g., diagnostic  vs. causal), please refer to the detailed walkthrough in our manuscript. 
+
