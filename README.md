@@ -3,7 +3,7 @@ This repository includes a GeNIe [^1] project file that is used for the illustra
 
 ## How to Use
 - **Download and install GeNIe** Download the GeNIe modeling environment from [the BayesFusion website](https://www.bayesfusion.com/downloads/).
-- **Open 
+- **Download the GeNIe project file** Right-click [
 
 
 
