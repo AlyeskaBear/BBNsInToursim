@@ -1,7 +1,7 @@
 # Supplementary Materials: An Illustrative Example
 This repository includes the GeNIe [^1] project file used for the illustrative example presented in our manuscript, "*Observation or Intervention: Inference with Bayesian Belief Networks in Tourism Research*".
 
-## How to Use
+## Quick Start
 **1. Install GeNIe**
   - Download the GeNIe modeling environment from [the BayesFusion website](https://www.bayesfusion.com/downloads/) and follow the installation instructions for your operating system.
 
