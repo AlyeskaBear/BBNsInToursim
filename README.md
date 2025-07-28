@@ -1,5 +1,5 @@
 # Supplementary Materials: An Illustrative Example
-This repository includes the GeNIe [^1] project file used for the illustrative example presented in our manuscript, "*Observation or Intervention: Inference with Bayesian Belief Networks in Tourism Research*".
+This repository includes the GeNIe project file used for the illustrative example presented in our manuscript, "*Observation or Intervention: Inference with Bayesian Belief Networks in Tourism Research*".
 
 ## Quick Start
 **1. Install GeNIe**
@@ -13,8 +13,3 @@ This repository includes the GeNIe [^1] project file used for the illustrative e
   - Click the **Update** (_⚡_) icon on the toolbar to compile the network and display each variable's probability distribution.
 
 For other inference tasks (e.g., diagnostic  vs. causal), please refer to the detailed walkthrough in our manuscript.
-
-
-
-
-[^1]: GeNIe is a graphical tool for building and analyzing Bayesian belief networks. 
