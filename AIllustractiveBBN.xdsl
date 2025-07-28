@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Season">
+			<state id="Peak" />
+			<state id="Shoulder" />
+			<state id="Off" />
+			<probabilities>0.3 0.4 0.3</probabilities>
+		</cpt>
+		<cpt id="Price">
+			<state id="High" />
+			<state id="Medium" />
+			<state id="Low" />
+			<parents>Season</parents>
+			<probabilities>0.95 0.05 0 0.3 0.5 0.2 0 0.05 0.95</probabilities>
+		</cpt>
+		<cpt id="Crowding">
+			<state id="High" />
+			<state id="Medium" />
+			<state id="Low" />
+			<parents>Price Season</parents>
+			<probabilities>0.9 0.08 0.02 0.4 0.45 0.15 0.05 0.15 0.8 0.9 0.08 0.02 0.4 0.45 0.15 0.05 0.15 0.8 0.9 0.08 0.02 0.4 0.45 0.15 0.06 0.15 0.79</probabilities>
+		</cpt>
+		<cpt id="Quality">
+			<state id="High" />
+			<state id="Low" />
+			<probabilities>0.8 0.2</probabilities>
+		</cpt>
+		<cpt id="Satisfaction">
+			<state id="High" />
+			<state id="Medium" />
+			<state id="Low" />
+			<parents>Crowding Quality</parents>
+			<probabilities>0.3 0.5 0.2 0.2 0.45 0.35 0.6 0.3 0.1 0.4 0.4 0.2 0.8 0.15 0.05 0.6 0.25 0.15</probabilities>
+		</cpt>
+		<cpt id="Return_Intent">
+			<state id="Return" />
+			<state id="Neutral" />
+			<state id="NotReturn" />
+			<parents>Satisfaction Price</parents>
+			<probabilities>0.55 0.35 0.1 0.75 0.2 0.05 0.95 0.05 0 0.3 0.45 0.25 0.45 0.35 0.2 0.35 0.35 0.3 0.1 0.35 0.55 0.25 0.4 0.35 0.3 0.3 0.4</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 5.0.5310.0 ACADEMIC" name="Network1">
+			<node id="Price">
+				<name>Price (P)</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>688 403 736 433</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="Season">
+				<name>Season (S)</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>516 527 564 557</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="Crowding">
+				<name>Crowding (C)</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>381 360 429 390</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="Satisfaction">
+				<name>Satisfaction (Sat)</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>526 181 574 211</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="Return_Intent">
+				<name>Return Intent (R)</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>783 164 831 194</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="Quality">
+				<name>Quality (Q)</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>856 327 904 357</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<textbox>
+				<caption>To compile the model and display each variable’s probability distribution, click the “Update” (lightning) icon on the toolbar.</caption>
+				<font color="000000" name="Arial" size="12" />
+				<position>11 31 512 67</position>
+			</textbox>
+			<arcformat parent="Crowding" child="Satisfaction" width="1" color="000080" />
+		</genie>
+	</extensions>
+</smile>
