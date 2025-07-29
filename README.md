@@ -6,7 +6,7 @@ This repository includes the GeNIe project file used for the illustrative exampl
   - Download the GeNIe modeling environment from [the BayesFusion website](https://www.bayesfusion.com/downloads/) and follow the installation instructions for your operating system.
 
 **2. Download the example model**
-  - Right-click [AIllustractiveBBN](https://github.com/AlyeskaBear/BBNsInToursim/blob/main/AIllustractiveBBN.xdsl) and choose `Save link as...` to store the file in a convenient location.
+  - Click the [AIllustractiveBBN.xdsl](https://github.com/AlyeskaBear/BBNsInToursim/blob/main/AIllustractiveBBN.xdsl) link, then select `Download file` in the upper‑right corner to save it to your computer..
 
 **3. Open and compile the model**
   - Double-click the saved file to launch it in GeNIe.
