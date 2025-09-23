@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Season">
+			<state id="Peak" />
+			<state id="Shoulder" />
+			<state id="Off" />
+			<probabilities>0.3 0.4 0.3</probabilities>
+		</cpt>
+		<cpt id="Price">
+			<state id="High" />
+			<state id="Medium" />
+			<state id="Low" />
+			<parents>Season</parents>
+			<probabilities>0.97 0.02 0.01 0.15 0.75 0.1 0.02 0.08 0.9</probabilities>
+		</cpt>
+		<cpt id="Crowding">
+			<state id="High" />
+			<state id="Medium" />
+			<state id="Low" />
+			<parents>Season Price</parents>
+			<probabilities>0.95 0.04 0.01 0.96 0.03 0.01 0.97 0.02 0.01 0.66 0.24 0.1 0.68 0.23 0.09 0.7 0.22 0.08 0.18 0.27 0.55 0.2 0.27 0.53 0.22 0.28 0.5</probabilities>
+		</cpt>
+		<cpt id="Quality">
+			<state id="High" />
+			<state id="Low" />
+			<probabilities>0.7 0.3</probabilities>
+		</cpt>
+		<cpt id="Satisfaction">
+			<state id="High" />
+			<state id="Medium" />
+			<state id="Low" />
+			<parents>Quality Crowding</parents>
+			<probabilities>0.45 0.4 0.15 0.7 0.25 0.05 0.9 0.09 0.01 0.15 0.35 0.5 0.35 0.4 0.25 0.6 0.3 0.1</probabilities>
+		</cpt>
+		<cpt id="Return_Intent">
+			<state id="Return" />
+			<state id="Neutral" />
+			<state id="NotReturn" />
+			<parents>Satisfaction Crowding Price</parents>
+			<probabilities>0.65 0.28 0.07000000000000001 0.7 0.24 0.06 0.75 0.2 0.05 0.8 0.16 0.04 0.84 0.12 0.04 0.87 0.1 0.03 0.92 0.06 0.02 0.9399999999999999 0.04 0.02 0.97 0.02 0.01 0.35 0.42 0.23 0.4 0.4 0.2 0.45 0.37 0.18 0.5 0.36 0.14 0.55 0.33 0.12 0.6 0.3 0.1 0.65 0.27 0.08 0.7 0.23 0.07000000000000001 0.75 0.2 0.05 0.15 0.45 0.4 0.18 0.45 0.37 0.2 0.45 0.35 0.25 0.47 0.28 0.3 0.45 0.25 0.35 0.42 0.23 0.35 0.42 0.23 0.4 0.4 0.2 0.45 0.37 0.18</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 5.0.5310.0 ACADEMIC" name="Network1">
+			<node id="Price">
+				<name>Price (P)</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>766 470 814 500</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="Season">
+				<name>Season (S)</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>594 594 642 624</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="Crowding">
+				<name>Crowding (C)</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>459 427 507 457</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="Satisfaction">
+				<name>Satisfaction (Sat)</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>604 248 652 278</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="Return_Intent">
+				<name>Return Intent (R)</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>860 231 908 261</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="Quality">
+				<name>Quality (Q)</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>934 394 982 424</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<textbox>
+				<caption>To compile the model and display each variable’s probability distribution, click the “Update” (lightning) icon on the toolbar.</caption>
+				<font color="000000" name="Arial" size="12" />
+				<position>11 51 512 87</position>
+			</textbox>
+			<arcformat parent="Crowding" child="Satisfaction" width="1" color="000080" />
+		</genie>
+	</extensions>
+</smile>
